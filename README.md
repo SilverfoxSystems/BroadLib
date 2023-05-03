@@ -34,9 +34,9 @@ Multiplication and division by an Int64 is supported.
 
 
 While operators +, -, * and / offer a convenient way, performance-wise, the <b>Add</b>,<b>Subtract</b>,<b>Multiply</b> and <b>Divide</b> methods are faster as they don't require extra memory to be allocated.  The calculations are performed directly on the existing digits.
-Operators are not fully implemented yet, however, the abovementioned procedures for basic calculations should work fine.
+Comparison operators are not fully implemented yet, however, the abovementioned procedures for basic calculations should work fine.
 
-The code in "Broad.vb" and "test.vb" (located in folder <i>Example BroadLib test</i>)projects are quite self-explanatory and you can easily tweak it according to your needs.
+The code in "Broad.vb" and "test.vb" (located in folder <i>Example BroadLib test</i>) projects are quite self-explanatory and you can easily tweak it according to your needs.
 
 Where ever you see <i>Exponent</i> or <i>exp64</i> in code, this means (2<sup>64</sup>)<sup>Exponent</sup> 
 
