@@ -1,17 +1,17 @@
 # BroadLib
-A library which manipulates numbers of large sizes - anywhere from 8 bytes up to 16GB (upper limit not tested yet) . 
+A library which manipulates numbers of large size - anywhere from 8 bytes up to 16GB (upper limit not tested yet) . 
 
-It works as a balanced numeral system with base of 2^64.
+It works as a balanced numeral system with base of 2<sup>64</sup>.
 
-<h3>Dependency library</h3>
+<h3>Prerequisite dependency library</h3>
 
-In order for this build to work, the <i>BroadOPs.dll</i> file needs to be downloaded from http://izi.wtf/BroadOPs and then placed into the root solution directory (with <i>Copy to output path</i> option enabled).  Of course, there are other ways of implementing the library, like for instance copying the BroadOPs.dll file into the system32 folder if you're planning to use it in many projects.
+In order for this build to work, the <b>BroadOPs.dll</b> file needs to be downloaded from http://izi.wtf/BroadOPs and then placed into the root solution directory (with <i>Copy to output path</i> option enabled).  Of course, there are other ways of implementing the library, like for instance copying the BroadOPs.dll file into the system32 folder if you're planning to use it in many projects.
 This is because BroadOPs.dll has a special licence to it.
 
 <h3>Types</h3> 
 
-<b>Broad</b> - a chained Int64 array with exponent representing value in the form of int64value^((2^64)^Exponent)
-at creation, you can specify number of digits reserved for non-integral part of the number. 
+<b>Broad</b> - a chained Int64 array with exponent representing value in the form of int64value^((2^64)^Exponent).
+At creation, you can specify number of digits reserved for non-integral part of the number. 
 
 <b>BFloat160</b> - a 160-bit floating point which consists of 128-bit mantissa (two signed QWords) and 32-bit exponent (a signed DWord).
 A <i>Double</i> must be converted to <i>BFloat</i> before it can be added to a <i>Broad</i>.  This conversion is done automatically.
@@ -24,6 +24,7 @@ You can initialize a Broad with:
 - Zero value. Specify <code>New(TotalBufferSize, nDigitsInPart)</code>. Both arguments are 32-bit integers and do not represent size in bytes, but in 8-byte size. Part size must be greater or equal to 0 and less than TotalBufferSize.
 
 Addition/Subtraction Operation
+
 You may use the "+" and "-" operators to add two Broad variables, something like <code>c = a + b</code>
 Also a BFloat, a Double or an Int64 can be added to a Broad type.
 
@@ -35,7 +36,8 @@ Multiplication and division by an Int64 is supported.
 While operators +, -, * and / offer a convenient way, performance-wise, the <b>Add</b>,<b>Subtract</b>,<b>Multiply</b> and <b>Divide</b> methods are faster as they don't require extra memory to be allocated.  The calculations are performed directly on the existing digits.
 Operators are not fully implemented yet, however, the abovementioned procedures for basic calculations should work fine.
 
-The code in "Broad.vb" and "starter.vb" projects are quite self-explanatory and you can easily tweak it according to your needs.
+The code in "Broad.vb" and "test.vb" (located in folder <i>Example BroadLib test</i>)projects are quite self-explanatory and you can easily tweak it according to your needs.
+
 Where ever you see <i>Exponent</i> or <i>exp64</i> in code, this means (2<sup>64</sup>)<sup>Exponent</sup> 
 
 ReadOnly Property <b>BufferSize</b> - Returns total number of digits
