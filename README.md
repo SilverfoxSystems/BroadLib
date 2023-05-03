@@ -1,5 +1,5 @@
 # BroadLib
-A library which manipulates numbers of large size - anywhere from 8 bytes to 16GB (upper limit not tested yet) . 
+A library which manipulates numbers of large sizes - anywhere from 8 bytes up to 16GB (upper limit not tested yet) . 
 
 It works as a balanced numeral system with base of 2^64.
 
