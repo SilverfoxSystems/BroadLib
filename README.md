@@ -49,6 +49,7 @@ Property <b>Buffer</b> As Long - Access the digit in buffer by index
  <b>Round</b> method - Adjusts PartSize to the given number.  Offers zero rounding error due to the balanced numeral system.
 
 <b>LTrim</b>(ByRef xl As Broad) - Strips leading zeroes
+
 ...
 
 <h3>Broad type description</h3>
