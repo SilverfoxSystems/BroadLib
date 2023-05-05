@@ -50,6 +50,8 @@ Property <b>Buffer</b> As Long - Access the digit in buffer by index
 
 <b>LTrim</b>(ByRef xl As Broad) - Strips leading zeroes
 
+<b>maxDigitsInString</b> Property - set the number of digits displayed in <i>ToString</i> method. 
+
 ...
 
 <h3>Broad type description</h3>
