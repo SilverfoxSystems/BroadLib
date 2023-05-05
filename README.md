@@ -1,9 +1,9 @@
 # BroadLib
 A library which manipulates numbers of large size - anywhere from 8 bytes up to 16GB (upper limit not tested yet) . 
 
-It works as a balanced numeral system with base of 2<sup>64</sup>.
+It works as a balanced numeral system with base of 2<sup>64</sup> and it provides the most efficient way of performing basic calculations upon large-scale memory blocks.
 
-<h3>Prerequisite dependency library</h3>
+<h2>Prerequisite dependency library</h2>
 
 In order for this build to work, the <b>BroadOPs.dll</b> file needs to be downloaded from http://izi.wtf/BroadOPs and then placed into the root solution directory (with <i>Copy to output path</i> option enabled).  Of course, there are other ways of implementing the library, like for instance copying the BroadOPs.dll file into the system32 folder if you're planning to use it in many projects.
 This is because BroadOPs.dll has a special licence to it.
