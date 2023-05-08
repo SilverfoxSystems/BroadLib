@@ -30,7 +30,7 @@ Also a BFloat, a Double or an Int64 can be added to a Broad type.
 
 Multiplication/Division 
 
-Multiplication and division by an Int64 is supported.
+Multiplication and division by an Int64 is supported. Multiplication by <i>Double</i> coming soon...
 
 
 While operators +, -, * and / offer a convenient way, performance-wise, the <b>Add</b>,<b>Subtract</b>,<b>Multiply</b> and <b>Divide</b> methods are faster as they don't require extra memory to be allocated.  The calculations are performed directly on the existing digits.
