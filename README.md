@@ -10,8 +10,7 @@ This is because BroadOPs.dll has a special licence to it.
 
 <h3>Types</h3> 
 
-<b>Broad</b> - a chained Int64 array with exponent representing value in the form of int64value^((2^64)^Exponent).
-At creation, you can specify number of digits reserved for non-integral part of the number. 
+<b>Broad</b> - a structure consisting of buffer (Int64 array) and number of digits reserved for for non-integral part of the number.
 
 <b>BFloat160</b> - a 160-bit floating point which consists of 128-bit mantissa (two signed QWords) and 32-bit exponent (a signed DWord).
 A <i>Double</i> must be converted to <i>BFloat</i> before it can be added to a <i>Broad</i>.  This conversion is done automatically.
