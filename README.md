@@ -1,3 +1,8 @@
+***
+***
+***     **THIS LIBRARY SHOULD NOT BE USED, DEVELOPMENT IS BEING CONTINUED HERE https://github.com/SilverfoxSystems/Hyper**
+***
+***
 # BroadLib
 A library which manipulates numbers of large size - anywhere from 8 bytes up to 16GB (upper limit not tested yet) . 
 
